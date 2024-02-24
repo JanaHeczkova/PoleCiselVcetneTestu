@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoleCisel", "NejvetsiCislo\PoleCisel.csproj", "{94EA0CD0-4768-4354-8288-923EE9520E90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoleCisel.Tests", "PoleCisel.Tests\PoleCisel.Tests.csproj", "{08517C40-D037-42C7-BD71-6CCA4F8A00FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94EA0CD0-4768-4354-8288-923EE9520E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94EA0CD0-4768-4354-8288-923EE9520E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94EA0CD0-4768-4354-8288-923EE9520E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94EA0CD0-4768-4354-8288-923EE9520E90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08517C40-D037-42C7-BD71-6CCA4F8A00FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08517C40-D037-42C7-BD71-6CCA4F8A00FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08517C40-D037-42C7-BD71-6CCA4F8A00FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08517C40-D037-42C7-BD71-6CCA4F8A00FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1AD10C2C-2801-4933-B084-B38C3125CC7F}
+	EndGlobalSection
+EndGlobal
