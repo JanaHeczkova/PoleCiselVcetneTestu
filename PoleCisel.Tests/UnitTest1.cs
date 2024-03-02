@@ -5,20 +5,15 @@ namespace PoleCiselVcTestu.Tests
         PoleCisel mojePoleCisel = new PoleCisel();
         double vysledek = 0;
 
-        [Fact]
-        public void TestVratNejvyssiCislo()
+        [Theory] //parametrizovaný test
+        [InlineData(new int[] { 2, 5, 4, 9, 6 }, 9)]
+        [InlineData(new int[] { 10, 3, 2, 8, 4, 0, 12 }, 12)]
+        [InlineData(new int[] { -2, 7, -5, 1, 8, 0, 10 }, 10)]
+        public void TestVratNejvyssiCislo(int[] pole, double ocekavanyVysledek) 
         {
-            int[] PoleCisel1 = { 2, 5, 4, 9, 6 };
-            vysledek = mojePoleCisel.VratNejvyssiCislo(PoleCisel1);
-            Assert.Equal(9, vysledek);
 
-            int[] PoleCisel2 = { 10, 3, 2, 8, 4, 0, 12 };
-            vysledek = mojePoleCisel.VratNejvyssiCislo(PoleCisel2);
-            Assert.Equal(12, vysledek);
-
-            int[] PoleCisel3 = { -2, 7, -5, 1, 8, 0, 10 };
-            vysledek = mojePoleCisel.VratNejvyssiCislo(PoleCisel3);
-            Assert.Equal(10, vysledek);
+            vysledek = mojePoleCisel.VratNejvyssiCislo(pole);
+            Assert.Equal(ocekavanyVysledek, vysledek);
         }
 
         [Fact]
